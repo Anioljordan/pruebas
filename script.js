@@ -7,9 +7,9 @@
   repository: "pruebas",
 */
 const SETTINGS = {
-  owner: "",
-  repository: "",
-  branch: "",
+  owner: "anioljordan",
+  repository: "pruebas",
+  branch: "main",
   ignoredFolders: ["node_modules", "dist", "build", "vendor"]
 };
 
