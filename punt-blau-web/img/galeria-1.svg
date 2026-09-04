@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <rect width="1200" height="900" fill="#dbeaf6"/>
+  <circle cx="600" cy="380" r="110" fill="none" stroke="#154b7d" stroke-width="4" opacity=".35"/>
+  <path d="M530 390h140M600 320v140" stroke="#154b7d" stroke-width="4" opacity=".35"/>
+  <text x="600" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" fill="#154b7d">FOTO PRINCIPAL</text>
+  <text x="600" y="645" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#154b7d" opacity=".72">Bar, terraza o ambiente</text>
+</svg>
