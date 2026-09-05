@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Bar ZEMNU Viladecavalls</title>
+
+  <meta name="description"
+    content="Bar ZEMNU, bar del pavellón del pueblo. Bocadillos, cafés, bebidas y ambiente deportivo." />
+<link rel="icon" type="image/png" href="images/logo_negro.png" media="(prefers-color-scheme: light)" />
+<link rel="icon" type="image/png" href="images/logo_blanco.jpg" media="(prefers-color-scheme: dark)" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <a href="index.html" class="brand" aria-label="Bar ZEMNU home">
+      <span class="brand-mark logo-mark">
+        <img src="images/logo.png" alt="Logo Bar ZEMNU">
+      </span>
+      <span class="brand-text">BAR ZEMNU</span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+
+    <nav class="main-nav">
+      <a href="index.html" data-i18n="nav.home">Home</a>
+      <a href="carta.html" data-i18n="nav.menu">Carta</a>
+      <a href="contacto.html" class="active" data-i18n="nav.contact">Contacto</a>
+    </nav>
+
+<div class="language-selector language-dropdown" aria-label="Selector de idioma">
+  <button class="language-current" type="button" aria-expanded="false">
+    <span class="current-lang-name">Español</span>
+    <span class="language-arrow"></span>
+  </button>
+
+  <div class="language-menu">
+    <button type="button" data-lang="es" class="lang-btn active">Español</button>
+    <button type="button" data-lang="ca" class="lang-btn">Català</button>
+    <button type="button" data-lang="en" class="lang-btn">English</button>
+  </div>
+</div>
+  </header>
+
+  <main>
+    <section class="simple-page-title">
+      <p class="eyebrow" data-i18n="nav.contact">Contacto</p>
+      <h1 data-i18n="nav.contact">Contacto</h1>
+    </section>
+
+    <section class="contact-layout">
+      <div class="contact-info">
+        <p class="section-number">01</p>
+        <h2 data-i18n="contact.infoTitle">Datos de contacto</h2>
+        <ul>
+          <li><strong data-i18n="footer.emailLabel">Correo</strong><a
+              href="mailto:contacto@barzemnuviladecavalls.com">contacto@barzemnuviladecavalls.com</a></li>
+          <li><strong>Instagram</strong><a href="https://instagram.com/barzemnuviladecavalls" target="_blank"
+              rel="noopener">@barzemnuviladecavalls</a></li>
+          <li><strong data-i18n="footer.addressLabel">Dirección</strong><span data-i18n="footer.address">Pavellón
+              municipal, tu pueblo</span></li>
+        </ul>
+      </div>
+
+      <form class="contact-form" id="contactForm" action="enviar-contacto.php" method="POST">
+        <p class="section-number">02</p>
+        <h2 data-i18n="contact.formTitle">Formulario</h2>
+
+        <label for="name" data-i18n="contact.name">Nombre</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email" data-i18n="contact.email">Correo electrónico</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message" data-i18n="contact.message">Mensaje</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <input type="text" name="website" class="honeypot" autocomplete="off" tabindex="-1">
+        <button type="submit" class="btn btn-primary" data-i18n="contact.send">Enviar mensaje</button>
+        <p class="form-status" id="formStatus"></p>
+        <!-- <p class="form-note" data-i18n="contact.formNote">Este formulario está preparado visualmente. Para que envíe
+          correos reales hay que conectarlo a backend o a un servicio externo.</p> -->
+      </form>
+    </section>
+
+    <section class="map-section">
+      <div class="category-title">
+        <span>03</span>
+        <h2 data-i18n="contact.mapTitle">Ubicación</h2>
+      </div>
+      <div class="map-wrapper">
+        <iframe title="Mapa Bar ZEMNU"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2985.6211190465237!2d1.9532839!3d41.5558001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a48d00477802ab%3A0x3fa5582c60341373!2sBar%20Zemnu.%20El%20bar%20del%20pavell%C3%B3.!5e0!3m2!1ses!2sau!4v1780640339530!5m2!1ses!2sau"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <h2>BAR ZEMNU</h2>
+      <p data-i18n="footer.meaning">Zona Esportiva Municipal del Nucli Urbà</p>
+    </div>
+    <div class="footer-grid">
+      <div>
+        <span data-i18n="footer.emailLabel">Correo</span>
+        <a href="mailto:contacto@barzemnuviladecavalls.com">contacto@barzemnuviladecavalls.com</a>
+      </div>
+      <div>
+        <span>Instagram</span>
+        <a href="https://instagram.com/barzemnu" target="_blank" rel="noopener">@barzemnuviladecavalls</a>
+      </div>
+      <div>
+        <span data-i18n="footer.addressLabel">Dirección</span>
+        <p data-i18n="footer.address">Pavellón municipal, tu pueblo</p>
+      </div>
+      <div>
+        <span data-i18n="footer.legalLabel">Legal</span>
+        <a href="privacidad.html" data-i18n="footer.privacy">Política de privacidad</a>
+        <a href="cookies.html" data-i18n="footer.cookies">Política de cookies</a>
+      </div>
+    </div>
+  </footer>
+
+<script src="js/lang.js"></script>
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
+</body>
+
+</html>
